@@ -1,11 +1,22 @@
 body {
-    background-color: green;
+  background-color: rgb(91, 12, 12);
+  color: white;
 }
 
 p {
-    text-decoration: Arial;
+  font: normal 14pt Arial;
+}
+
+.saldo {
+  font: normal 14pt Arial;
 }
 
 .butao {
-    color: black;
+  background-color: #fafafa;
+  color: black;
+  border: none;
+  padding: 1.5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
 }

@@ -1,7 +1,14 @@
 function boas_vindas() {
-  var nome = window.prompt("Qual é o seu nome?");
+  var nome = "";
+  do {
+    nome = window.prompt("Qual é o seu nome?");
+    if (nome === "" || nome === null) {
+      window.alert("Por favor, digite o seu nome!");
+    }
+  } while (nome === "" || nome === null);
   var p = document.getElementById("p1");
-  p.innerHTML = `Bem vindo ao seu melhor Banco, ${nome}!`;
+  p.innerHTML = `Bem vindo ao banco S4nt4nd3r, ${nome}!`;
+  p.style.font = "normal 16pt Arial";
 }
 boas_vindas();
 
