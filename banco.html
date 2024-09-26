@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banco - Simulação</title>
-    <link rel="stylesheet" href="banco.css" />
+    <title>Bank - Simulation</title>
+    <link rel="stylesheet" href="bank.css" />
   </head>
   <body>
     <p id="p1"></p>
-    <div class="saldo">O seu saldo: <span id="saldo">1000$</span></div>
-    <p>Quanto deseja sacar?</p>
-    <input type="number" name="saque" id="saque" />
-    <button class="butao" onclick="sacar()">sacar</button>
+    <div class="balance">Your balance: <span id="balance">1000</span>$</div>
 
-    <p>Quanto deseja depositar?</p>
-    <input type="number" name="deposito" id="deposito" />
-    <button class="butao" onclick="depositar()">depositar</button>
+    <p>How much do you want to withdraw?</p>
+    <input type="number" id="withdraw" />
+    <button class="button" onclick="withdraw()">Withdraw</button>
+
+    <p>How much do you want to deposit?</p>
+    <input type="number" id="deposit" />
+    <button class="button" onclick="deposit()">Deposit</button>
 
     <p id="res"></p>
 
-    <script src="banco.js"></script>
+    <script src="bank.js"></script>
   </body>
 </html>
