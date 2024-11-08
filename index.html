@@ -10,13 +10,17 @@
     <p id="p1"></p>
     <div class="balance">Your balance: <span id="balance">1000</span>$</div>
 
-    <p>How much do you want to withdraw?</p>
-    <input type="number" id="withdraw" />
-    <button class="button" onclick="withdraw()">Withdraw</button>
+    <div class="transaction-container">
+      <p>How much do you want to withdraw?</p>
+      <input type="number" id="withdraw" placeholder="Enter amount to withdraw" />
+      <button class="button" onclick="withdraw()">Withdraw</button>
+    </div>
 
-    <p>How much do you want to deposit?</p>
-    <input type="number" id="deposit" />
-    <button class="button" onclick="deposit()">Deposit</button>
+    <div class="transaction-container">
+      <p>How much do you want to deposit?</p>
+      <input type="number" id="deposit" placeholder="Enter amount to deposit" />
+      <button class="button" onclick="deposit()">Deposit</button>
+    </div>
 
     <p id="res"></p>
 

@@ -1,3 +1,4 @@
+//The welcome function
 function welcome() {
   var name = "";
   do {
@@ -12,7 +13,7 @@ function welcome() {
   p.style.font = "normal 18pt Arial";
 }
 welcome();
-
+//The withdraw function
 function withdraw() {
   var withdrawInput = parseFloat(document.getElementById("withdraw").value);
   var balance = parseFloat(document.getElementById("balance").innerText);
@@ -26,7 +27,7 @@ function withdraw() {
     res.innerHTML = "Insufficient or invalid amount!";
   }
 }
-
+//The deposit function
 function deposit() {
   var depositInput = parseFloat(document.getElementById("deposit").value);
   var balance = parseFloat(document.getElementById("balance").innerText);
